@@ -9,10 +9,10 @@ using System.Text;
 
 namespace ApplicationBLL
 {
-    public class CSVreaderService : ICSVreaderService
+    public class DataService : IDataService
     {
         private readonly ApplicationDBContext _context;
-        public CSVreaderService(ApplicationDBContext context)
+        public DataService(ApplicationDBContext context)
         {
             _context = context;
         }

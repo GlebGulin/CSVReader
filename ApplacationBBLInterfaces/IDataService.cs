@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ApplacationBLLInterfaces
 {
-    public interface ICSVreaderService
+    public interface IDataService
     {
         IEnumerable<DataModel> GetAllData();
         IEnumerable<TypeModel> GetTypes();

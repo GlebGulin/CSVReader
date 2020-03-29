@@ -10,6 +10,7 @@ module.exports = {
        publicPath: '/public/',
        filename: "[name].js"       // название создаваемого файла
    },
+   devtool: 'inline-source-map',
    resolve: {
     extensions: ['.ts', '.js']
   },

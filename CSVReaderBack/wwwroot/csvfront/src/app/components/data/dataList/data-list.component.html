@@ -1,0 +1,48 @@
+<h2>Test</h2>
+<div >
+    
+    <table>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                Status
+            </th>
+            <th>
+                Type
+            </th>
+            <th>
+                Client name
+            </th>
+            <th>
+                Amount
+            </th>
+            <th>
+                Action
+            </th>
+        </tr>
+        <tr *ngFor='let u of dataModel'>
+            <td>
+                {{u.transactionId}}
+            </td>
+            <td>
+                {{u.statusModel.status}}
+            </td>
+            <td>
+                {{u.typeModel.type}}
+            </td>
+            <td>
+                {{u.clientName}}
+            </td>
+            <td>
+                {{u.amount}}
+            </td>
+            <td>
+                <button>Edit</button>
+                <button>Delete</button>
+            </td>
+        </tr>
+        
+    </table>
+</div>

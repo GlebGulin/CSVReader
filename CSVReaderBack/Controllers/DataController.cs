@@ -13,8 +13,8 @@ namespace CSVReaderBack.Controllers
     [ApiController]
     public class CSVReaderController : ControllerBase
     {
-        private readonly ICSVreaderService _service;
-        public CSVReaderController(ICSVreaderService service)
+        private readonly IDataService _service;
+        public CSVReaderController(IDataService service)
         {
             _service = service;
         }

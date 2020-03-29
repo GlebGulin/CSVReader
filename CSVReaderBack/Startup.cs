@@ -23,6 +23,7 @@ namespace CSVReaderBack
         {
             Configuration = configuration;
         }
+        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
         public IConfiguration Configuration { get; }
 
@@ -31,8 +32,19 @@ namespace CSVReaderBack
         {
             string connection = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<ApplicationDBContext>(options => 
-                options.UseSqlServer(connection, b => b.MigrationsAssembly("ApplicationBinding")));
-            services.AddTransient<ICSVreaderService, CSVreaderService>();
+                options.UseNpgsql(connection, b => b.MigrationsAssembly("ApplicationBinding")));
+            services.AddTransient<IDataService, DataService>();
+            services.AddCors(options =>
+            {
+                options.AddPolicy(MyAllowSpecificOrigins,
+                builder =>
+                {
+                    builder.WithOrigins("http://localhost:8080/")
+                                         .AllowAnyOrigin()
+                                         .AllowAnyHeader()
+                                         .AllowAnyMethod(); 
+                });
+            });
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
@@ -47,7 +59,9 @@ namespace CSVReaderBack
             {
                 app.UseHsts();
             }
+            app.UseCors(MyAllowSpecificOrigins);
 
+            
             app.UseHttpsRedirection();
             app.UseMvc();
         }
