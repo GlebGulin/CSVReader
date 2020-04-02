@@ -7,6 +7,7 @@ import { StatusSelectComponent } from './components/data/status/status.component
 import {TypeSelectComponent} from './components/data/type/type.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule }   from '@angular/forms';
+import {ActionComponent} from './components/app/action/action.component';
 // import {SharedModule} from './modules/shared.module';
 // import {NgClassComponent} from './directivescomponent/ngclass.component';
 // import { ChangestyleComponent } from './directivescomponent/changestyle.component';
@@ -17,7 +18,8 @@ import { ReactiveFormsModule }   from '@angular/forms';
 @NgModule({
     imports:      [ BrowserModule, FormsModule, HttpClientModule, ReactiveFormsModule ],
     // imports: [BrowserModule],
-    declarations: [ AppComponent, DataListComponent, StatusSelectComponent, TypeSelectComponent ],
+    declarations: [ AppComponent, DataListComponent, StatusSelectComponent, TypeSelectComponent,
+        ActionComponent ],
     // declarations: [ AppComponent ],
     bootstrap:    [ AppComponent ]
     // exports: [

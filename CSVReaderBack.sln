@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1000
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSVReaderBack", "CSVReaderBack\CSVReaderBack.csproj", "{717EEF51-0E4B-4010-B1D8-DEDA6520856E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSVReaderBack", "CSVReaderBack\CSVReaderBack.csproj", "{717EEF51-0E4B-4010-B1D8-DEDA6520856E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{92590789-0233-4A0F-A2B1-1CF303B746E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "Models\Models.csproj", "{92590789-0233-4A0F-A2B1-1CF303B746E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplacationBLLInterfaces", "ApplacationBBLInterfaces\ApplacationBLLInterfaces.csproj", "{CE3D4DF8-49AE-49E7-BA2A-72EDC4BF931B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplacationBLLInterfaces", "ApplacationBBLInterfaces\ApplacationBLLInterfaces.csproj", "{CE3D4DF8-49AE-49E7-BA2A-72EDC4BF931B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationBLL", "ApplicationBLL\ApplicationBLL.csproj", "{DD35660B-4822-4FF5-88C2-DD651E59FA5E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationBLL", "ApplicationBLL\ApplicationBLL.csproj", "{DD35660B-4822-4FF5-88C2-DD651E59FA5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationBinding", "ApplicationBinding\ApplicationBinding.csproj", "{BAE98766-19E7-4ADC-A754-976C8B0C0488}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationBinding", "ApplicationBinding\ApplicationBinding.csproj", "{BAE98766-19E7-4ADC-A754-976C8B0C0488}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mappers", "Mappers\Mappers.csproj", "{0E610FDC-3F18-48A6-95AD-82C708F04769}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{BAE98766-19E7-4ADC-A754-976C8B0C0488}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BAE98766-19E7-4ADC-A754-976C8B0C0488}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BAE98766-19E7-4ADC-A754-976C8B0C0488}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E610FDC-3F18-48A6-95AD-82C708F04769}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E610FDC-3F18-48A6-95AD-82C708F04769}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E610FDC-3F18-48A6-95AD-82C708F04769}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E610FDC-3F18-48A6-95AD-82C708F04769}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

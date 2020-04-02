@@ -1,0 +1,6 @@
+{"item1":
+    [{"id":1,"transactionId":1,"statusId":1,"status":"Pending","statusModel":
+        {"id":1,"status":"Pending"},
+        "typeId":1,"type":"Withdrawal","typeModel":{"id":1,"type":"Withdrawal"},"clientName":"Dale Cotton","amount":28.43},
+        {"id":2,"transactionId":2,"statusId":2,"status":"Completed","statusModel":{"id":2,"status":"Completed"},"typeId":2,"type":"Refill","typeModel":{"id":2,"type":"Refill"},"clientName":"Paul Carter","amount":45.16}],
+ "item2":[{"id":1,"status":"Pending"},{"id":2,"status":"Completed"},{"id":3,"status":"Cancelled"}],"item3":[{"id":1,"type":"Withdrawal"},{"id":2,"type":"Refill"}]}
