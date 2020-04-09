@@ -1,5 +1,6 @@
 ﻿using ApplacationBLLInterfaces;
 using ApplicationBinding;
+using Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -14,17 +15,21 @@ namespace ApplicationBLL
         {
             _context = context;
         }
-        public bool NewFile(byte[] file)
-        {
-            try
-            {
+        //public bool NewFile(byte[] file)
+        //{
+        //    try
+        //    {
                 
-            }
-            catch (System.Exception)
-            {
-                return false;
-            }
-            return true;
+        //    }
+        //    catch (System.Exception)
+        //    {
+        //        return false;
+        //    }
+        //    return true;
+        //}
+        public List<DataModel> GetReceivedData()
+        {
+            return null;
         }
     }
 }

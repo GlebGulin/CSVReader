@@ -18,11 +18,11 @@ namespace CSVReaderBack.Controllers
         {
             _service = service;
         }
-        //[HttpPost("upload")]
-        //[Route("csv/uploadfile")]
-        //public IActionResult UploadFile(IFormFile file)
-        //{
-        //    return Ok(_service.NewFile(file));
-        //}
+        [HttpPost("upload")]
+              [Route("csv/upload")]
+        public IActionResult UploadFile(IFormFile file)
+        {
+            return Ok(file);
+        }
     }
 }

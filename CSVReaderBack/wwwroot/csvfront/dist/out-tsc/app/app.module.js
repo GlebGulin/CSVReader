@@ -15,6 +15,7 @@ var status_component_1 = require("./components/data/status/status.component");
 var type_component_1 = require("./components/data/type/type.component");
 var http_1 = require("@angular/common/http");
 var forms_2 = require("@angular/forms");
+var action_component_1 = require("./components/app/action/action.component");
 // import {SharedModule} from './modules/shared.module';
 // import {NgClassComponent} from './directivescomponent/ngclass.component';
 // import { ChangestyleComponent } from './directivescomponent/changestyle.component';
@@ -28,7 +29,8 @@ var AppModule = /** @class */ (function () {
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule, forms_1.FormsModule, http_1.HttpClientModule, forms_2.ReactiveFormsModule],
             // imports: [BrowserModule],
-            declarations: [app_component_1.AppComponent, data_list_component_1.DataListComponent, status_component_1.StatusSelectComponent, type_component_1.TypeSelectComponent],
+            declarations: [app_component_1.AppComponent, data_list_component_1.DataListComponent, status_component_1.StatusSelectComponent, type_component_1.TypeSelectComponent,
+                action_component_1.ActionComponent],
             // declarations: [ AppComponent ],
             bootstrap: [app_component_1.AppComponent]
             // exports: [

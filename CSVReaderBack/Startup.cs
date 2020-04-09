@@ -34,15 +34,24 @@ namespace CSVReaderBack
             services.AddDbContext<ApplicationDBContext>(options => 
                 options.UseNpgsql(connection, b => b.MigrationsAssembly("ApplicationBinding")));
             services.AddTransient<IDataService, DataService>();
+            services.AddTransient<IParseService, ParseService>();
             services.AddCors(options =>
             {
                 options.AddPolicy(MyAllowSpecificOrigins,
                 builder =>
                 {
-                    builder.WithOrigins("http://localhost:8080/")
-                                         .AllowAnyOrigin()
-                                         .AllowAnyHeader()
-                                         .AllowAnyMethod(); 
+                    //builder.WithOrigins("http://localhost:8080")
+                    //                     .AllowAnyOrigin()
+                    //                     .AllowAnyHeader()
+                    //                     .AllowAnyMethod(); 
+                    //builder.WithOrigins("http://localhost:8080")
+                    // .AllowAnyHeader()
+                    // .AllowAnyMethod(); 
+                    builder.AllowAnyOrigin();
+                    builder.AllowAnyHeader();
+                    builder.AllowAnyMethod();
+                    builder.AllowCredentials();
+;
                 });
             });
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
@@ -59,10 +68,11 @@ namespace CSVReaderBack
             {
                 app.UseHsts();
             }
-            app.UseCors(MyAllowSpecificOrigins);
+            
 
             
             app.UseHttpsRedirection();
+            app.UseCors(MyAllowSpecificOrigins);
             app.UseMvc();
         }
     }

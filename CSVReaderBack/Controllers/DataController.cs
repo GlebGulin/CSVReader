@@ -30,5 +30,12 @@ namespace CSVReaderBack.Controllers
         {
             return Ok(_service.NewData(dataModel));
         }
+        //[HttpPost("upload")]
+        ////[HttpPost]
+        //[Route("csv/upload")]
+        //public IActionResult UploadFile(IFormFile file)
+        //{
+        //    return Ok(file);
+        //}
     }
 }
